@@ -1,20 +1,58 @@
-o<!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Hello World!</title>
+<style>
+    h1 { 
+        color:rgb(152, 195, 152); 
+    }
+    h2 { 
+        color:rosybrown; 
+    }
+    .bulletPoints { 
+        color:rgb(67, 38, 10);
+    }
+    header li {
+        list-style: none;
+    }
+    header li a:link, a:visited {
+        text-decoration: none;
+        border:5px rgb(17, 35, 57);
+        background-color: beige;
+        color:rgb(80, 39, 86);
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    header section a:hover, a:active {
+        background-color:rgb(187, 148, 154);
+        color:rgb(68, 25, 34);
+        cursor:pointer;
+    }
+    .songList li:nth-child(odd) {
+        color:lightslategrey;
+        width:200px;
+    }
+    .songList li:nth-child(even) {
+        color:rgb(104, 104, 145);
+        width:200px;
+    }
+</style>
 </head>
-<body>
+
+    <h1>Welcome to Planet Pisatchio</h1> 
+    <img src="https://i.redd.it/ij2l721mgck51.jpg" width="120" height="150" alt="airpod baby">
     <!-- look a comment! -->
-    This is the index: 
-    <a href="index.html" title="my index">Index found here</a>
-    <div>Check out this cool video too:
+
+<header>
+        <div>&copy; PAT 2024</div>
+    Site index: 
+    <a href="index.html" title="my index">Click for index!</a>
+    <div>While you're here, check out this cool video too:
     <a href="https://youtu.be/GRPy2EEz_5M?si=uycoFnBkobksAVMD" target="_blank" title="This changed my life">This changed my life fr</a>
-    </div>
-    <header>
-        Dis is da header &copy; PAT 2024
-    </header>
-    <h1 id="top">Main heading moment</h1>
+    <h2 id="top">Navigate</h2>
     Find all sections here:
     <section>
         <ul>
@@ -23,33 +61,31 @@ o<!doctype html>
             <li><a href="#fruit">fruit list</a></li>
         </ul>
     </section>
-    <section>
-        Section 1 &copy; PAT 2024
-        <article>boom article 1</article>
-    </section>
-    <h2>Unordered List Moment</h2>
+</header>
+
+<body>
     <section id="pokemon">
-        My Favorite Pokemon ポケモン！
-        <ul>
-            <li>Marill (マリル）</li>
-            <li>Milotic（ミロカロス）</li>
+    <h2>My Favorite Pokemon ポケモン！</h2>
+        <ul class="bulletPoints">
+            <li>Marill (マリル) </li>
+            <li>Milotic (ミロカロス)</li>
                 <ul>
                     <li>Especially the shiny</li>
                 </ul>
-            <li>Espeon（エーフィ）</li>
-            <li>Kabutops（カブトプス）</li>
-            <li>Jirachi（ジラーチ）</li>
+            <li>Espeon (エーフィ)</li>
+            <li>Kabutops (カブトプス)</li>
+            <li>Jirachi (ジラーチ)</li>
         </ul>
         Before the next section, check out this wide pic of Scizor eating a hot dog:
         <p>
             <img src="https://i.pinimg.com/564x/78/ae/fd/78aefdac3d1c54d49ff1909497faf430.jpg" width="600" height="250" alt="scizor eating a hot dog">
         </p>
-        I think it's pretty awesome. ホットドッグを食べます！
+        ホットドッグを食べます！  
+        I think it's pretty awesome. 
     </section>
-    <h2>Ordered List Moment</h2>
     <section id="songs">
-        Current Fav Songs
-        <ol>
+    <h2>Some of my current favorite songs</h2>
+        <ol class=songList>
             <li>&quot;Supersonic&quot; by fromis_9</li>
             <li>&quot;Slow Dance&quot; by Clairo</li>
             <li>&quot;I Don't Know You&quot; by the Marias</li>
@@ -58,8 +94,8 @@ o<!doctype html>
         </ol>
     </section>
     <section id="fruit">
-        <h2>List of Fruit I Like</h2>
-        <ul>
+        <h2>Some fruit I like</h2>
+        <ul  class="bulletPoints">
             <li>Apples</li>
             <li>Apricots</li>
             <li>Cantaloupe</li>
