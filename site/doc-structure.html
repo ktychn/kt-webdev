@@ -4,11 +4,24 @@
     <meta charset="utf-8">
     <title>Hello World!</title>
 <style>
-    h1 { 
+    header {
+        font-family:Georgia, Times, serif;
+        color:rgb(73, 37, 0);
+    }
+    body {
+        font-family:Georgia, Times, serif;
+        font-size: 105%;
+        line-height: 25px;
+    }
+    body ul {
+        line-height: 130%;
+    }
+    header h1 { 
         color:rgb(152, 195, 152); 
     }
     h2 { 
         color:rosybrown; 
+        line-height: 0.6;
     }
     .bulletPoints { 
         color:rgb(67, 38, 10);
@@ -33,27 +46,34 @@
     }
     .songList li:nth-child(odd) {
         color:lightslategrey;
-        width:200px;
+        width:260px;
     }
     .songList li:nth-child(even) {
         color:rgb(104, 104, 145);
-        width:200px;
+        width:260px;
+    }
+    .honorable {
+        color:rgb(60, 70, 88);
+        font-size: 104%;
+        font-weight: bold;
+        line-height: 0.3;
     }
 </style>
 </head>
 
-    <h1>Welcome to Planet Pisatchio</h1> 
+<header>
+    <h1 style="line-height: 1;">Welcome to Planet Pisatchio</h1> 
+    <div style="font-style: italic; line-height:0 ;">&star; Wish you were here! &star;</div>
+    <br>
     <img src="https://i.redd.it/ij2l721mgck51.jpg" width="120" height="150" alt="airpod baby">
     <!-- look a comment! -->
-
-<header>
         <div>&copy; PAT 2024</div>
     Site index: 
     <a href="index.html" title="my index">Click for index!</a>
-    <div>While you're here, check out this cool video too:
+    <div>While you're here, might as well watch this cool video too: 
     <a href="https://youtu.be/GRPy2EEz_5M?si=uycoFnBkobksAVMD" target="_blank" title="This changed my life">This changed my life fr</a>
     <h2 id="top">Navigate</h2>
-    Find all sections here:
+    Pick a section, any section:
     <section>
         <ul>
             <li><a href="#pokemon">pokemon list</a></li>
@@ -62,10 +82,10 @@
         </ul>
     </section>
 </header>
-
+<br>
 <body>
     <section id="pokemon">
-    <h2>My Favorite Pokemon ポケモン！</h2>
+    <h2>My Favorite Pokemon</h2>
         <ul class="bulletPoints">
             <li>Marill (マリル) </li>
             <li>Milotic (ミロカロス)</li>
@@ -76,6 +96,17 @@
             <li>Kabutops (カブトプス)</li>
             <li>Jirachi (ジラーチ)</li>
         </ul>
+        <br>
+        <section class="honorable">ASIDE: My Favorite Pokemon Unite Characters</section>
+        <ul class="bulletPoints">
+            <li>Scizor</li>
+            <li>Azumarill</li>
+            <li>Lapras</li>
+            <li>Aegislash</li>
+            <li>Mewtwo</li>
+            <li>Umbreon</li>
+            <li>Blastoise</li>
+        <br>
         Before the next section, check out this wide pic of Scizor eating a hot dog:
         <p>
             <img src="https://i.pinimg.com/564x/78/ae/fd/78aefdac3d1c54d49ff1909497faf430.jpg" width="600" height="250" alt="scizor eating a hot dog">
@@ -83,6 +114,7 @@
         ホットドッグを食べます！  
         I think it's pretty awesome. 
     </section>
+    <br>
     <section id="songs">
     <h2>Some of my current favorite songs</h2>
         <ol class=songList>
@@ -92,7 +124,9 @@
             <li>&quot;Moonstruck&quot; by Enhyphen</li>
             <li>&quot;Here I Am&quot; by Twice</li>
         </ol>
+        <div style="width:700px">Special shoutout to <i style="font-style:italic;"> Charm</i> by Clairo, <i style="font-style:italic;">Cosmic</i> by Red Velvet, and <i style="font-style:italic;">Submarine</i> by the Marias for being my personal albums of the year.</div>
     </section>
+    <br>
     <section id="fruit">
         <h2>Some fruit I like</h2>
         <ul  class="bulletPoints">
@@ -102,9 +136,6 @@
             <li>Strawberries</li>
             <li>Watermelon</li>
         </ul>
-    </section>
-    <section>
-        TEST
     </section>
 </body>
 </html>
