@@ -4,42 +4,63 @@
     <meta charset="utf-8">
     <title>Hello World!</title>
 <style>
-    header {
-        font-family:Georgia, Times, serif;
-        color:rgb(73, 37, 0);
+    * {
+        margin: 0;
+        padding: 0; 
     }
+   
     body {
         font-family:Georgia, Times, serif;
         font-size: 105%;
         line-height: 25px;
+        color:rgb(64, 38, 12);
+        background-color: rgb(229, 237, 221);
+        padding: 10px;
+        margin: 5px;
     }
-    body ul {
+    body section ul {
         line-height: 130%;
     }
-    header h1 { 
-        color:rgb(152, 195, 152); 
+    body section ul ul {
+        margin-left: 20px;
     }
-    h2 { 
+    h1 { 
+        color:rgb(152, 195, 152); 
+        margin: 10px 5px 5px 5px;
+        padding: 5px;
+    }
+    body section h2 { 
         color:rosybrown; 
-        line-height: 0.6;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    body section {
+        margin: 10px;
+        padding: 10px;
     }
     .bulletPoints { 
         color:rgb(67, 38, 10);
     }
-    header li {
-        list-style: none;
+    section.intro a:hover, a:active {
+        color:rgb(170, 37, 65);
+        cursor:pointer;
     }
-    header li a:link, a:visited {
+    .intro ul {
+        list-style: none;
+        font-size: 109%;
+    }
+    .navigate a:link, a:visited {
         text-decoration: none;
-        border:5px rgb(17, 35, 57);
-        background-color: beige;
+        background-color: rgb(255, 246, 249);
         color:rgb(80, 39, 86);
         display: block;
-        width: 200px;
+        width: 180px;
         text-align: center;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
+        margin-top: 3px;
     }
-    header section a:hover, a:active {
+    .navigate a:hover, a:active {
         background-color:rgb(187, 148, 154);
         color:rgb(68, 25, 34);
         cursor:pointer;
@@ -52,6 +73,22 @@
         color:rgb(104, 104, 145);
         width:260px;
     }
+    body section li a:link, a:visited {
+        text-decoration: none;
+        color:rgb(107, 68, 100);
+    }
+    body section div a:link, a:visited {
+        text-decoration: underline;
+        color:rgb(107, 68, 100);
+    }
+    body section ol a:hover, a:active {
+        color:rgb(170, 37, 65);
+        cursor:pointer;
+    }
+    body section div a:hover, a:active {
+        color:rgb(170, 37, 65);
+        cursor:pointer;
+    }
     .honorable {
         color:rgb(60, 70, 88);
         font-size: 104%;
@@ -61,43 +98,41 @@
 </style>
 </head>
 
-<header>
-    <h1 style="line-height: 1;">Welcome to Planet Pisatchio</h1> 
-    <div style="font-style: italic; line-height:0 ;">&star; Wish you were here! &star;</div>
-    <br>
-    <img src="https://i.redd.it/ij2l721mgck51.jpg" width="120" height="150" alt="airpod baby">
+<body>
+    <h1 class="intro" style="line-height: 1; font-family:Georgia; font-weight:bold;">Welcome to Planet Pisatchio</h1> 
+    <div class="intro" style="font-style: italic; line-height:0; margin:10px;">&star; Wish you were here! &star;</div>
+    <section class="intro">
+        <img src="https://i.redd.it/ij2l721mgck51.jpg" width="120" height="150" alt="airpod baby">
     <!-- look a comment! -->
         <div>&copy; PAT 2024</div>
-    Site index: 
-    <a href="index.html" title="my index">Click for index!</a>
-    <div>While you're here, might as well watch this cool video too: 
-    <a href="https://youtu.be/GRPy2EEz_5M?si=uycoFnBkobksAVMD" target="_blank" title="This changed my life">This changed my life fr</a>
-    <h2 id="top">Navigate</h2>
-    Pick a section, any section:
-    <section>
-        <ul>
+        Site index: 
+        <a href="index.html" title="my index">Click for index!</a>
+        <div>While you're here, might as well watch this cool video too: <a href="https://youtu.be/GRPy2EEz_5M?si=uycoFnBkobksAVMD" target="_blank" title="This changed my life">This changed my life fr</a>
+    </section>
+    <section class="intro">
+        <h2 style="margin-bottom: 5px;">Navigate</h2>
+        <div class="intro" style="margin-top: 0px; margin-bottom: 5px;">Pick a section, any section:</div>
+        <ul class="navigate">
             <li><a href="#pokemon">pokemon list</a></li>
             <li><a href="#songs">songs list</a></li>
             <li><a href="#fruit">fruit list</a></li>
         </ul>
     </section>
-</header>
-<br>
-<body>
+    <br>
     <section id="pokemon">
-    <h2>My Favorite Pokemon</h2>
-        <ul class="bulletPoints">
-            <li>Marill (マリル) </li>
-            <li>Milotic (ミロカロス)</li>
-                <ul>
-                    <li>Especially the shiny</li>
-                </ul>
-            <li>Espeon (エーフィ)</li>
-            <li>Kabutops (カブトプス)</li>
-            <li>Jirachi (ジラーチ)</li>
-        </ul>
-        <br>
-        <section class="honorable">ASIDE: My Favorite Pokemon Unite Characters</section>
+        <h2>My Favorite Pokemon</h2>
+            <ul class="bulletPoints">
+                <li>Marill (マリル) </li>
+                <li>Milotic (ミロカロス)</li>
+                    <ul>
+                        <li>Especially the shiny</li>
+                    </ul>
+                <li>Espeon (エーフィ)</li>
+                <li>Kabutops (カブトプス)</li>
+                <li>Jirachi (ジラーチ)</li>
+            </ul>
+    <br>
+    <section class="honorable">ASIDE: My Favorite Pokemon Unite Characters</section>
         <ul class="bulletPoints">
             <li>Scizor</li>
             <li>Azumarill</li>
@@ -106,25 +141,28 @@
             <li>Mewtwo</li>
             <li>Umbreon</li>
             <li>Blastoise</li>
-        <br>
-        Before the next section, check out this wide pic of Scizor eating a hot dog:
-        <p>
-            <img src="https://i.pinimg.com/564x/78/ae/fd/78aefdac3d1c54d49ff1909497faf430.jpg" width="600" height="250" alt="scizor eating a hot dog">
-        </p>
-        ホットドッグを食べます！  
-        I think it's pretty awesome. 
+        </ul>
+        <div style="line-height: 2.5;">Before the next section, check out this wide pic of Scizor eating a hot dog:
+        </div>
+        <img src="https://i.pinimg.com/564x/78/ae/fd/78aefdac3d1c54d49ff1909497faf430.jpg" width="600" height="250" alt="scizor eating a hot dog">
+        <div> ホットドッグを食べます！ I think it's pretty awesome. </div>
     </section>
     <br>
     <section id="songs">
-    <h2>Some of my current favorite songs</h2>
-        <ol class=songList>
-            <li>&quot;Supersonic&quot; by fromis_9</li>
-            <li>&quot;Slow Dance&quot; by Clairo</li>
-            <li>&quot;I Don't Know You&quot; by the Marias</li>
-            <li>&quot;Moonstruck&quot; by Enhyphen</li>
-            <li>&quot;Here I Am&quot; by Twice</li>
+        <h2 style="margin-bottom: 2px;">Some of my current favorite songs</h2>
+        <div style="font-style:italic; margin-bottom: 7px; font-size:98%; color:rgb(112, 19, 68)">Click the song titles to listen!</div>
+        <ol class="songList" style="margin-left: 5px">
+            <li style="margin-top: 5px; margin-bottom: 0px;"><a href="https://open.spotify.com/track/6oNLSQX8bcAdbCElZYju3v?si=3cdd6e474e75414c" target="_blank" title="Supersonic">Supersonic</a> by fromis_9</li>
+            <li><a href="https://open.spotify.com/track/2qmmnbJ9JR3f7vofbyje5r?si=4f031955b18b454a" target="_blank" title="Slow Dance">Slow Dance</a> by Clairo</li>
+            <li><a href="https://open.spotify.com/track/06cqIVC8kRAT02qfHQT65v?si=622fa520af1d4aaa" target="_blank" title="I Don't Know You">I Don't Know You</a> by the Marias</li>
+            <li><a href="https://open.spotify.com/track/3gYWGRS64XrGSrjD3vvtga?si=d2ffbe367f744160" target="_blank" title="Moonstruck">Moonstruck</a> by Enhyphen</li>
+            <li><a href="https://open.spotify.com/track/7qzpdzJRiIHXJpa28FYrD9?si=a424f55c682e4ee9" target="_blank" title="Here I Am">Here I Am</a> by Twice</li>
         </ol>
-        <div style="width:700px">Special shoutout to <i style="font-style:italic;"> Charm</i> by Clairo, <i style="font-style:italic;">Cosmic</i> by Red Velvet, and <i style="font-style:italic;">Submarine</i> by the Marias for being my personal albums of the year.</div>
+        <div class="spotify" style="width: 700px; margin-top: 10px;">Special shoutout to 
+            <a href="https://open.spotify.com/album/1KNUCVXgIxKUGiuEB8eG0i?si=EzGMPLcuSBWXGuKv4TE7vQ" target="_blank" title="Charm"><i style="font-style:italic;"> Charm</i></a> by Clairo, 
+            <a href="https://open.spotify.com/album/5E8apoFsaUFhZxGGSju6aW?si=858c6e3c1c224c6c" target="_blank" title="Cosmic"><i style="font-style:italic;">Cosmic</i></a> by Red Velvet, and
+            <a href="https://open.spotify.com/album/03guxdOi12XJbnvxvxbpwG?si=42d8133c53c64766" target="_blank" title="Submarine"><i style="font-style:italic;">Submarine</i></a> 
+            by the Marias for being my personal albums of the year.</div>
     </section>
     <br>
     <section id="fruit">
