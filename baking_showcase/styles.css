@@ -1,0 +1,177 @@
+body {
+    margin-left: 15px;
+    color:rgb(88, 62, 45);
+    background-color: rgb(246, 238, 228);
+}
+
+a {
+    color: rgb(194, 104, 119);
+}
+
+div {
+    text-align: center;
+}
+
+h2 {
+    line-height: 50%;
+    font-size: 210%;
+}
+
+h3 {
+    line-height: 0%;
+    margin-top: 0px;
+    padding-top: 0%;
+    margin-bottom: 6%;
+}
+
+h5 {
+    margin-top: 0%;
+    padding-top: 0%;
+    line-height: 100%;
+    text-indent: 5%;
+    text-align: center;
+    font-size: 17px;
+    color:rgb(87, 63, 48)
+    /* outline: 2px solid blue; */
+}
+
+img {
+    /* outline: 5px solid purple; */
+    margin: 0%;
+    padding-left: 0px;
+}
+
+figcaption {
+    line-height: 2;
+}
+
+p {
+    line-height: 50%;
+}
+
+li {
+    line-height: 170%;
+}
+
+.home {
+    align-content: center;
+    text-align: center;
+}
+
+h1.home {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-bottom: 0;
+    margin-bottom: 0%;
+    font-size: 275%;
+}
+
+.page h1{
+    font-size: 250%;
+    /* font-size: 45px; */
+    line-height: 55%;
+    /* margin-left: 16px; */
+}
+
+.page h3 {
+    font-size: 17px;
+}
+
+.page p {
+    line-height: 130%;
+}
+
+.birthday {
+    background-color: rgb(225, 225, 250);
+}
+
+.birthday h1{
+    color: rgb(61, 154, 154);
+}
+
+.birthday h3 {
+    color: rgb(192, 137, 146);
+}
+
+.katie {
+    background-color: rgb(197, 201, 198);
+}
+
+.katie h1{
+    color: rgb(60, 86, 73);
+}
+
+.katie h3 {
+    color: rgb(100, 138, 117);
+}
+
+.gal {
+    background-color: rgb(251, 217, 236);
+}
+
+.gal h1{
+    color: rgb(154, 61, 126);
+}
+
+.gal h3 {
+    color: rgb(192, 137, 190);
+}
+
+.lb {
+    background-color: rgb(250, 252, 222);
+}
+
+.lb h1{
+    color: rgb(126, 28, 96);
+}
+
+.lb h3 {
+    color: rgb(214, 129, 10);
+}
+
+.cc {
+    background-color: rgb(249, 231, 210);
+}
+
+.cc h1{
+    color: rgb(78, 101, 16);
+}
+
+.cc h3 {
+    color: rgb(201, 120, 6);
+}
+
+.home img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: auto;
+}
+
+.page img {
+    height: 300px;
+    width: auto;
+}
+
+.page li {
+    line-height: 130%;
+}
+
+.page-title {
+    text-align: left;
+}
+
+#notes {
+    line-height: 50%
+}
+
+#title {
+    color:rgb(136, 90, 85);
+}
+
+#back {
+    /* margin-top: 500%; */
+    /* padding-top: 500%; */
+    padding-bottom: 0px;
+    line-height: 500%;
+}
