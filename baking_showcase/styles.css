@@ -1,5 +1,5 @@
 body {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     color:rgb(88, 62, 45);
     background-color: rgb(246, 238, 228);
 }
@@ -15,6 +15,7 @@ div {
 h2 {
     line-height: 50%;
     font-size: 210%;
+    margin-left: 2%;
 }
 
 h3 {
@@ -28,7 +29,6 @@ h5 {
     margin-top: 0%;
     padding-top: 0%;
     line-height: 100%;
-    text-indent: 5%;
     text-align: center;
     font-size: 17px;
     color:rgb(87, 63, 48)
@@ -70,7 +70,6 @@ h1.home {
     font-size: 250%;
     /* font-size: 45px; */
     line-height: 55%;
-    /* margin-left: 16px; */
 }
 
 .page h3 {
@@ -79,6 +78,10 @@ h1.home {
 
 .page p {
     line-height: 130%;
+}
+
+body.page {
+    margin-left: 3%;
 }
 
 .birthday {
@@ -163,6 +166,10 @@ h1.home {
 
 #notes {
     line-height: 50%
+}
+
+#nav {
+    margin-left: 2.5%;
 }
 
 #title {
